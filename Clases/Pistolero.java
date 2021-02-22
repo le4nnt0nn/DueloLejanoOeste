@@ -48,6 +48,9 @@ abstract public class Pistolero extends Persona {
     }
 
     public void disparar(Pistolero enemy) {
+        if(revolver==null){
+            System.out.println("El revolver no tiene balas");
+        }
        System.out.println(this.nombre+" ha disparado a "+enemy.getNombre());
        enemy.setVivo(false);
     }
