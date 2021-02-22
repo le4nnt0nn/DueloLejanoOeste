@@ -43,8 +43,21 @@ abstract public class Pistolero extends Persona {
         return "Pistolero [revolver=" + revolver + ", vivo=" + vivo + "]";
     }
 
-    public void disparar(Pistolero rival) {
-        
+    public void desenfundar(Revolver revolver) {
+        System.out.println(this.nombre+" ha desenfundado");
+    }
+
+    public void disparar(Pistolero enemy) {
+       System.out.println(this.nombre+" ha disparado a "+enemy.getNombre());
+       enemy.setVivo(false);
+    }
+
+    public void verEstado() {
+        if (this.vivo == true) {
+            System.out.println("Esta vivo");
+        } else if (this.vivo == false) {
+            System.out.println("Esta muerto");
+        }
     }
     
     

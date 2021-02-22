@@ -25,6 +25,10 @@ public class Bandido extends Pistolero {
         this.apodo = apodo;
     }
 
+    public void verApodo() {
+        System.out.println(this.apodo);
+    }
+
     @Override
     public String toString() {
         return "Bandido [apodo=" + apodo + "]";

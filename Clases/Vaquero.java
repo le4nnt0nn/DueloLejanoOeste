@@ -15,6 +15,14 @@ public class Vaquero extends Pistolero {
         this.numeroPlaca = numeroPlaca;
     }
 
+    public Vaquero() {
+
+    }
+
+    public Vaquero(String nombre, Revolver revolver, boolean vivo) {
+        super(nombre, revolver, vivo);
+    }
+
     public Vaquero(Revolver revolver, boolean vivo, int numeroPlaca) {
         super(revolver, vivo);
         this.numeroPlaca = numeroPlaca;
